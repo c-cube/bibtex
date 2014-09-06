@@ -697,12 +697,6 @@ author = "Steven Eker and José Meseguer and Ambarish Sridharanarayanan",
        howpublished = "\url{http://caml.inria.fr}",
 }
 
-@conference{coqine,
-            title       =       "{CoqInE : Translating the calculus of inductive constructions into the $\lambda\Pi$-calculus modulo.}",
-            author      =       " M. Boespflug and G. Burel ",
-            year        =       2012,
-}
-
 @misc{holide,
       title = "Holide",
       author = "Ali Assaf and Guillaume Burel",
@@ -1012,3 +1006,160 @@ year=1993}
  address = {New York, NY, USA},
  keywords = {formal systems, interactive theorem proving, proof checking, typed lambda calculus},
 }
+
+@Comment FoCaLize
+
+@inproceedings {
+	focal04,
+	title	=	"{Building certified components within FOCAL}",
+	author	=	" C. Dubois and T. Hardin and V. Viguie Donzeau-Gouge ",
+	booktitle	=	"{Symposium on Trends in Functional Programming (TFP04)}",
+	year	=	2004,
+	series	=	"Trends in Functional Programming ",
+}
+@Comment	month	=	"January",
+@Comment	volume	=	5,
+@Comment	pages	=	"33-48",
+@Comment	note	=	"{note}",
+
+@INPROCEEDINGS{focaldep02,
+  AUTHOR = {Virgile Prevosto and Damien Doligez and Th\'er\`ese Hardin},
+  TITLE = {Algebraic Structures and Dependent Records},
+  BOOKTITLE = {Proceedings of TPHOLs 02},
+  YEAR = 2002,
+  EDITOR = {C\'esar Mu\~noz, Sofi\`ene Tahar and V\'ictor Carre\~eo},
+  MONTH = {August},
+  PUBLISHER = {Springer-Verlag}
+}
+
+@Comment Dedukti
+
+@inproceedings{dedukti12,
+  title = {The lambda-Pi-calculus Modulo as a Universal Proof Language},
+  booktitle = {Proceedings of the Second International Workshop on Proof Exchange for Theorem Proving},
+  author = {Boespflug, Mathieu and Carbonneaux, Quentin and Hermant, Olivier},
+  year = {2012},
+}
+  @Comment address = {Manchester, {UK}},
+  @Comment series = {{CEUR} Workshop Proceedings},
+  @Comment volume = {878},
+  @Comment url = {http://ceur-ws.org/Vol-878/paper2.pdf},
+  @Comment month = jun,
+  @Comment pages = {28--43}
+
+@Comment Coqine
+
+@inproceedings{coqine12,
+  author = {M. Boespflug and G. Burel},
+  title = {CoqInE : Translating the calculus of inductive constructions into the $\lambda\Pi$-calculus modulo},
+  booktitle = {Proceedings of the Second International Workshop on Proof Exchange for Theorem Proving},
+  year = 2012
+}
+
+@Comment Holide
+
+@inproceedings{hurd2011,
+  author = {Joe Hurd},
+  booktitle = {NASA Formal Methods},
+  title = {The {OpenTheory} Standard Theory Library},
+  year = 2011,
+  pages = {177--191},
+  url = {http://gilith.com/research/papers},
+  abstract = {Interactive theorem proving is tackling ever larger formalization and
+verification projects, and there is a critical need for theory
+engineering techniques to support these efforts. One such technique is
+cross-prover package management, which has the potential to simplify
+the development of logical theories and effectively share theories
+between different theorem prover implementations. The OpenTheory
+project has developed standards for packaging theories of the higher
+order logic implemented by the HOL family of theorem provers. What is
+currently missing is a standard theory library that can serve as a
+published contract of interoperability and contain proofs of basic
+properties that would otherwise appear in many theory packages. The
+core contribution of this paper is the presentation of a standard
+theory library for higher order logic represented as an OpenTheory
+package. We identify the core theory set of the HOL family of theorem
+provers, and describe the process of instrumenting the HOL Light
+theorem prover to extract a standardized version of its core theory
+development. We profile the axioms and theorems of our standard theory
+library and investigate the performance cost of separating the
+standard theory library into coherent hierarchical theory packages.}
+}
+
+@Comment Focalide
+
+@MastersThesis{Caud2012,
+  author =       {Cauderlier, Rapha\"el},
+  title =        {Object-Oriented Features in lambda-Pi-calculus modulo, Compiling FoCaLize to Dedukti},
+  school =       {Master MPRI, ENS Cachan},
+  year =         {2012},
+}
+
+@Comment State of the art
+
+@PhdThesis{Zwan99,
+  author =       {Jan Zwanenburg},
+  title =        {Object-Oriented Concepts and Proof Rules: Formalization in Type Theory and Implementation in Yarrow},
+  school =       {Eindhoven University of Technology},
+  year =         {1999}
+}
+
+@inproceedings{setzer06,
+author = {Anton Setzer},
+title = {Object-oriented programming in dependent type theory},
+editor = {Henrik Nilsson},
+booktitle = {Trends in Functional Programming Volume 7},
+publisher = {Intellect},
+address = {Bristol and Chicago},
+year = {2007},
+pages = {91 -- 108},
+available = { }
+}
+
+@Comment Refinement
+
+@inproceedings{Mag03,
+  author = {Nicolas Magaud},
+  title = {{C}hanging {D}ata {R}epresentation within the {C}oq {S}ystem},
+  booktitle = {TPHOLs'2003},
+  publisher = {LNCS, Springer-Verlag},
+  volume = {2758},
+  year = {2003},
+  note = {© Springer-Verlag},
+  abstract = {
+{In a theorem prover like Coq, mathematical concepts can be implemented in several ways.
+Their different representations can be either efficient for computing or well-suited
+to carry out proofs easily.  In this paper, we present improved techniques to
+deal with changes of data representation within Coq.  We propose  a smart handling
+of case analysis and definitions together with some general methods to transfer
+recursion operators and their reduction rules from one setting to another.  Once
+we have built a formal correspondence between two settings, we can translate
+automatically properties obtained in the initial
+setting into new properties in the target setting.  We successfully experiment with
+changing Peano's numbers
+into binary numbers for the whole 'Arith' library of Coq as well as with
+changing polymorphic lists into reversed (snoc) lists. }},
+  psfile = {ftp://ftp-sop.inria.fr/lemme/Nicolas.Magaud/tphols2003-nmagaud.ps},
+  url = {http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=2758&spage=87}
+}
+
+@Book{BBook,
+  author =       "Abrial, Jean-Raymond",
+  title =        "The {B}~Book - Assigning Programs to Meanings",
+  publisher =    "Cambridge University Press",
+  ISBN =         "0-521-49619-5",
+  year =         "1996",
+  month =        aug,
+}
+
+@inproceedings{lambdalifting,
+ author = {Johnsson, Thomas},
+ title = {Lambda lifting: transforming programs to recursive equations},
+ booktitle = {Proc. of a conference on Functional programming languages and computer architecture},
+ year = {1985},
+ publisher = {Springer-Verlag}
+}
+ @Comment isbn = {3-387-15975-4},
+ @Comment location = {Nancy, France},
+ @Comment pages = {190--203},
+ @Comment numpages = {14},
