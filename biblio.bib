@@ -562,9 +562,6 @@
     title={Theorem proving in arithmetic without multiplication},
     author={Cooper, David C},
     journal={Machine Intelligence},
-    volume={7},
-    number={91-99},
-    pages={300},
     year={1972}
 }
 @inproceedings{waldmann2001superposition,
@@ -793,7 +790,7 @@
   pages     = {102-117},
   ee        = {http://dx.doi.org/10.1007/978-3-540-73228-0_9},
   crossref  = {TLCA2007},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+  bibsource = {DBLP, http://dblp.uni-trier.de},
   publisher = {Springer}
 }
 
@@ -882,6 +879,15 @@ author = "Steven Eker and José Meseguer and Ambarish Sridharanarayanan",
   howpublished = {\url{http://coq.inria.fr/}}
 }
 
+
+@manual{Coq12,
+  author      = {{Coq} {Development} {Team}, The},
+  title       = {The {Coq} Reference Manual, version 8.4},
+  month       = Aug,
+  year        = {2012},
+  note        = {Available electronically at \url{http://coq.inria.fr/doc}}
+}
+@comment From coq-club ml, 07-07-2014
 
 
 @PHDTHESIS{terminaison,
@@ -985,6 +991,22 @@ year=1993}
   series={Monographs in Computer Science},
   year={1996},
   publisher={Springer New York}
+}
+
+@INPROCEEDINGS{abadi94FO,
+    author = {Mart\'{i}n Abadi and Luca Cardelli},
+    title = {A theory of primitive objects: Untyped and first-order systems},
+    booktitle = {In Proc. TACS’94, Theoretical Aspects of Computing Sofware},
+    year = {1994},
+    pages = {296--320}
+}
+
+@INPROCEEDINGS{abadi94SO,
+    author = {Mart\'{i}n Abadi and Luca Cardelli},
+    title = {A theory of primitive objects: second-order systems},
+    booktitle = {Proc. ESOP’94 - European Symposium on Programming},
+    year = {},
+    publisher = {Springer-Verlag}
 }
 
 @inproceedings{Gillard00,
@@ -1248,4 +1270,102 @@ masid = {202184}
   url          = {http://conal.net/papers/hoas.pdf},
   booktitle    = "Programming Language Design and Implementation",
   year         = 1988,
+
+@comment rho-calculus
+@INPROCEEDINGS{CirsteaLiquoriWackTYPES03,
+  author = {Cirstea,~Horatiu and Liquori,~Luigi and Wack,~Benjamin},
+  title = {Rewriting Calculus with Fixpoints: Untyped and First-order Systems},
+  year = {2003},
+  volume = {3085},
+  publisher = {Springer},
+  pdf = {data/types2003.pdf},
+  abstract = { The rewriting calculus, also called rho-calculus, is a framework embed
+ding lambda-calculus and rewriting capabilities, by allowing abstraction not only on
+variables but also on patterns. The higher-order mechanisms of the lambda-calculus and
+the pattern matching facilities of the rewriting are then both available at the same
+level. Many type systems for the lambda-calculus can be generalized to the rho-calculus:
+in this paper, we study extensively a first-order rho-calculus \`a la Church, called
+stk.
+The type system of stk allows one to type (object oriented flavored) fixpoints,
+leading to an expressive and safe calculus. In particular, using pattern matching,
+one can encode and typecheck term rewriting systems in a natural and automatic
+way. Therefore, we can see our framework as a starting point for the theoretical
+basis of a powerful typed rewriting-based language.}
+}
+
+@INPROCEEDINGS{CirsteaKirchnerLiquoriMatchingPower-RTA2001,
+  author = {Cirstea,~Horatiu and Kirchner,~Claude and Liquori,~Luigi},
+  title = {{M}atching {P}ower},
+  year = {2001},
+  booktitle = {Proceedings of {RTA'2001}},
+  publisher = {Springer-Verlag},
+  series = {{Lecture Notes in Computer Science}},
+  month = MAY,
+  ps = {data/rta2001.pdf},
+  abstract = {In this paper we give a simple and uniform
+	presentation of the rewriting calculus, also called
+	rho-calculus.  In addition to its simplicity, this formulation
+computations	explicitly allows us to encode complex structures such as
+	lists, sets, and objects.  We provide extensive examples of
+	the calculus, and we focus on its ability to represent some
+	object oriented calculi, namely the Lambda Calculus of Objects
+	of Fisher, Honsell, and Mitchell, and the Object Calculus of
+	Abadi and Cardelli. Furthermore, the calculus allows us to get
+	object oriented constructions unreachable in other calculi. In
+	summa, we intend to show that because of its matching ability,
+	the rho-calculus represents a ``lingua franca'' to naturally
+	encode many paradigms of computations. This enlightens the
+	capabilities of the rewriting calculus based language ELAN to
+	be used as a logical as well as powerful semantical framework.
+	}
+}
+
+@comment Maude
+@Unpublished{CDELMMQ99-manual,
+  author =       {Manuel Clavel and Francisco Dur{\'a}n and Steven Eker and
+                  Patrick Lincoln and Narciso Mart{\'\i}-Oliet and Jos{\'e}
+                  Meseguer and Jos{\'e} F. Quesada},
+  title =        {{Maude}: Specification and Programming in Rewriting
+                  Logic},
+  year =         1999,
+  month =        jan,
+  note =         {Manual distributed as
+                  documentation of the {Maude} system, Computer
+                  Science Laboratory, SRI International.
+		  \url{http://maude.csl.sri.com/manual}}
+}
+
+@Article{casc_06,
+    Author       = "Sutcliffe, G. and Suttner, C.",
+    Year         = "2006",
+    Title        = "{The State of CASC}",
+    Journal      = "AI Communications",
+    Volume       = "19",
+    Number       = "1",
+    Pages        = "35-48"
+}
+
+@incollection{princess_prover,
+    year={2008},
+    isbn={978-3-540-89438-4},
+    booktitle={{Logic for Programming, Artificial Intelligence, and Reasoning}},
+    volume={5330},
+    series={Lecture Notes in Computer Science},
+    editor={Cervesato, Iliano and Veith, Helmut and Voronkov, Andrei},
+    doi={10.1007/978-3-540-89439-1_20},
+    title={{A Constraint Sequent Calculus for First-Order Logic with Linear Integer Arithmetic}},
+    url={http://dx.doi.org/10.1007/978-3-540-89439-1_20},
+    publisher={Springer Berlin Heidelberg},
+    author={Rümmer, Philipp},
+    pages={274-289},
+    language={English}
+}
+
+@ARTICLE{fast_decision_procedure_congruence_closure,
+    author = {{Greg Nelson and Derek and C. Oppen}},
+    title = {{Fast decision procedures based on congruence closure}},
+    journal = {Journal of the ACM},
+    year = {1980},
+    volume = {27},
+    pages = {356--364}
 }
